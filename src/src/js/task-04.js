@@ -1,6 +1,14 @@
-// Лічильник складається зі спану і кнопок, які по кліку повинні збільшувати і зменшувати його значення на одиницю.
+const decrementEl = document.querySelector('[data-action ="decrement"]');
+const incrementEl = document.querySelector('[data-action="increment"]');
+const spanEl = document.getElementById("value");
 
-// Створи змінну counterValue, в якій буде зберігатися поточне значення лічильника та ініціалізуй її значенням 0.
+decrementEl.addEventListener("click", onDecrementEl);
+incrementEl.addEventListener("click", onIncrementEl);
+let counterValue = 0;
 
-// Додай слухачів кліків до кнопок, всередині яких збільшуй або зменшуй значення лічильника.
-// Оновлюй інтерфейс новим значенням змінної counterValue.
+function onDecrementEl() {
+  spanEl.textContent = --counterValue;
+}
+function onIncrementEl() {
+  spanEl.textContent = ++counterValue;
+}
