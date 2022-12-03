@@ -13,6 +13,7 @@ btnDestroy.addEventListener("click", destroyBoxes);
 
 function onBtnCreate() {
   createBoxes(numberBox);
+  numberBox = "";
 }
 
 function onInput(evt) {
@@ -29,6 +30,7 @@ function createBoxes(amount) {
     console.log(newBox);
   }
   newBoxes.insertAdjacentHTML("beforeend", newBox);
+
   inputNuber.value = "";
 }
 
