@@ -13,6 +13,7 @@ function onSubmit(evt) {
   evt.preventDefault();
 
   const { email, password } = evt.currentTarget.elements;
+  console.log(email.value);
 
   const emailEl = email.value ? email.value : alert("заповніть email");
   const passwordEL = password.value
@@ -21,4 +22,5 @@ function onSubmit(evt) {
 
   console.log(" email", emailEl);
   console.log("password", passwordEL);
+  formEl.reset();
 }
