@@ -24,7 +24,6 @@ const galleryEl = document.querySelector(".gallery");
 galleryEl.insertAdjacentHTML("afterbegin", galleryListEl);
 
 console.log(galleryListEl);
-console.log(galleryEl);
 
 galleryEl.style.display = "flex";
 galleryEl.style.gap = "10px";
