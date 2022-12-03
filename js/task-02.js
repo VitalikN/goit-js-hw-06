@@ -18,5 +18,6 @@ const foo = (ingredients) => {
     // всі li вставляємо в  ul
     listEl.append(itemEl);
   }
+  console.log(listEl);
 };
 foo(ingredients);
